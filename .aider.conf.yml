@@ -1,0 +1,5 @@
+model: ollama_chat/qwen2.5-coder:32b
+edit-format: diff
+auto-commits: true
+analytics-disable: true
+check-update: false

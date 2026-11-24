@@ -1,0 +1,36 @@
+export const DAILY_TASKS = [
+  'Write down why you started this challenge.',
+  'Do your challenge for just 10 minutes.',
+  'Tell one person about your challenge.',
+  'Prepare tomorrow\'s session tonight.',
+  'Do it first thing in the morning.',
+  'Try a slightly harder version today.',
+  'Review your first week and note what worked.',
+  'Remove one distraction from your routine.',
+  'Do it somewhere new.',
+  'Reward yourself for 10 days of effort.',
+  'Teach someone one thing you learned.',
+  'Do it at a different time of day.',
+  'Write down one obstacle and how to beat it.',
+  'Go a bit longer than usual.',
+  'Halfway check-in: what has changed?',
+  'Do it with a friend, in person or online.',
+  'Do the hardest part first.',
+  'Take a photo or note to mark your progress.',
+  'Keep it simple: just show up.',
+  'Plan your final stretch.',
+  'Share a small win.',
+  'Do it without checking your phone first.',
+  'Improve one thing about your setup.',
+  'Revisit your reason from day 1.',
+  'Do an extra-focused session.',
+  'Help someone else start their own challenge.',
+  'Write down three things you have gained.',
+  'Do it even if you do not feel like it.',
+  'Prepare a plan for after the challenge.',
+  'Final day: celebrate and decide what is next.',
+];
+
+export function taskForDay(day: number): string {
+  return DAILY_TASKS[(day - 1) % DAILY_TASKS.length];
+}

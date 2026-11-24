@@ -1,0 +1,5 @@
+- name: ollama_chat/qwen2.5-coder:32b
+  edit_format: diff
+  use_repo_map: true
+  extra_params:
+    num_ctx: 16384
